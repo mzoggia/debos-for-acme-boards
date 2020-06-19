@@ -61,8 +61,8 @@ actions:
     source: overlays/growfs
 
   - action: overlay
-    description: add kernel, dtb and modules
-    source: overlays/kernel/{{ $board }}
+    description: add bootloader, kernel, dtb and modules
+    source: overlays/boot/{{ $board }}
 
   - action: image-partition
     description: create a partitioned image
@@ -88,11 +88,6 @@ actions:
 
   - action: filesystem-deploy
     description: deploying filesystem onto image
-
-  - action: run
-    description: obtain a bitmap file for faster flashing
-    postprocess: true
-    command: bmaptool create {{ $image }} -o {{ $image }}.bmap
 
   - action: run
     description: compress the image

@@ -4,4 +4,8 @@ Please read this article for more info:
 
 * <https://www.acmesystems.it/debos>
 
+Based on Antonio Galea works available on this link:
+
+* <https://github.com/ant9000/acmesystems-image-builder>
+
 
