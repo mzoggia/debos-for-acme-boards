@@ -1,4 +1,4 @@
-{{- $arch     := or .arch     "arm" -}}
+{{- $arch     := or .arch     "armel" -}}
 {{- $suite    := or .suite    "buster" -}}
 {{- $board    := or .board    "aria" -}}
 {{- $locale   := or .locale   "en_US" -}}
