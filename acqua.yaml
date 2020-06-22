@@ -47,22 +47,14 @@ actions:
     chroot: true
     script: scripts/setup-locale.sh {{ $locale }}
 
-  - action: overlay
-    description: configure eth0 for dhcp
-    source: overlays/network
-
   - action: run
     description: add a new user (will be in sudoers)
     chroot: true
     script: scripts/setup-user.sh {{ $user }} "{{ $pass }}"
 
   - action: overlay
-    description: command for extending rootfs partition
-    source: overlays/growfs
-
-  - action: overlay
-    description: add bootloader, kernel, dtb and modules
-    source: overlays/boot/{{ $board }}
+    description: Static files to add to the rootfs
+    source: overlays/{{ $board }}/
 
   - action: image-partition
     description: create a partitioned image
