@@ -24,8 +24,7 @@ actions:
         kmod, sudo, adduser, systemd-sysv, udev, dnsutils, ifupdown, iproute2,
         iputils-ping, udhcpc, netbase, net-tools, ethtool, openssh-server,
         lsb-release, locales, dialog, file, usbutils, nano, less, tree,
-        vim-tiny, screen, rsync, curl, wget, zip, unzip, cloud-guest-utils,
-        firmware-ralink
+        vim-tiny, screen, rsync, curl, wget, zip, unzip, cloud-guest-utils
     ]
 
   - action: run
