@@ -15,6 +15,7 @@ actions:
     suite: {{ $suite }}
     components:
       - main
+      - non-free
     mirror: http://cdn.debian.net/debian/
     variant: minbase
 
@@ -24,7 +25,8 @@ actions:
         kmod, sudo, adduser, systemd-sysv, udev, dnsutils, ifupdown, iproute2,
         iputils-ping, udhcpc, netbase, net-tools, ethtool, openssh-server,
         lsb-release, locales, dialog, file, usbutils, nano, less, tree,
-        vim-tiny, screen, rsync, curl, wget, zip, unzip, cloud-guest-utils
+        vim-tiny, screen, rsync, curl, wget, zip, unzip, cloud-guest-utils,
+        firmware-ralink, wpasupplicant
     ]
 
   - action: run
